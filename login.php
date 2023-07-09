@@ -13,16 +13,19 @@ if (isset($_POST['submit'])) {
     $errors['password'] = "Password Required";
   }
    if(empty($errors)){
-    $select = "Select * from `user` where email = '$email' AND password = '$password'";
+    $select = "Select * from `user` where email = '$email'";
     $res = mysqli_query($conn,$select);
     $row = mysqli_fetch_assoc($res);
     $id = $row['id'];
     $prev_email = $row['email'];
     $prev_password = $row['password'];
-    if($email==$prev_email || password_verify($password,$prev_password)){
+    if($email==$prev_email && password_verify($password,$prev_password)){
         session_start();
         $_SESSION['user_id'] = $id;
        echo"login Success and session of user id '$id' is stored in the browser";
+       header('location:index.html');
+
+      
       }
       else{
         $errors['email'] = "Invalid username or password";

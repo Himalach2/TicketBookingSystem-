@@ -11,7 +11,7 @@
       <h1>Movie Ticketing Site</h1>
       <nav>
         <ul>
-          <li><a href="./index.php">Home</a></li>
+          <li><a href="./home.php">Home</a></li>
           <li><a href="./movies.php">Movie Listings</a></li>
           <li><a href="./add_movie.php">Add Movie</a></li>
         </ul>
@@ -19,11 +19,13 @@
     </div>
   </header>
 
-  <div class="container">
+  <!-- <div class="container">
     <main>
       <?php include 'content.php'; ?>
     </main>
-  </div>
+  </div> -->
+
+  
 
   <footer>
     <div class="container">

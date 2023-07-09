@@ -53,3 +53,23 @@ footer p {
   margin: 0;
   padding: 0;
 }
+.secDivhome{
+  position: absolute;
+  top: 102px;
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(150, 150, 215);
+  color: white;
+}
+.headerMsg{
+  text-align: center;
+  margin-top: 80px;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.thrDivhome{
+  background: url('./images/moviestheater.jpg')no-repeat center center/cover;
+  position: relative;
+  top: 186px;
+  height: 60vh;
+}
