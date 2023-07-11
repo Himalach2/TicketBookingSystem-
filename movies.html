@@ -1,0 +1,56 @@
+<?php
+include 'connection.php';
+$sql = "SELECT * FROM `movies`";
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Listing</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .movie {
+      margin-bottom: 20px;
+    }
+    .movie h2 {
+      margin-top: 0;
+    }
+    .movie p {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Movie Listing</h1>
+
+  <div class="movie">
+    <h2>Movie Title 1</h2>
+    <p>Release Date: January 1, 2023</p>
+    <p>Genre: Action</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Showtimes: 12:00 PM, 3:00 PM, 6:00 PM</p>
+    <button type="button">Buy Tickets</button>
+  </div>
+
+  <div class="movie">
+    <h2>Movie Title 2</h2>
+    <p>Release Date: February 15, 2023</p>
+    <p>Genre: Comedy</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Showtimes: 1:00 PM, 4:00 PM, 7:00 PM</p>
+    <button type="button">Buy Tickets</button>
+  </div>
+
+  <!-- Add more movie listings here -->
+
+</body>
+</html>
