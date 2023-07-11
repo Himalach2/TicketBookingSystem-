@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Movie Ticketing Site</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
   <script src="script.js"></script>
 </head>
 <body>
@@ -18,17 +18,14 @@
       </nav>
     </div>
   </header>
-
-  <!-- <div class="container">
-    <main>
-      <?php include 'content.php'; ?>
-    </main>
-  </div> -->
-
-  
-
+<div class="main-body">
+  <div class="cinema-box">
+    <img src="images/ramkahani.jpeg" width="100%" height="99.8%">
+  </div>
+  <img src="images/main.jpg">
+</div>
   <footer>
-    <div class="container">
+    <div class="container"> 
       <p>&copy; 2023 Movie Ticketing Site. All rights reserved.</p>
     </div>
   </footer>

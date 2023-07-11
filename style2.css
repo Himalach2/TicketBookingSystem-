@@ -73,3 +73,28 @@ footer p {
   top: 186px;
   height: 60vh;
 }
+.main-body{
+  width: 100%;
+  background: url(images/main.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.main-body img{
+  width: 100%;
+}
+.cinema-box{
+  width: 200px;
+  height: 260px;
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+  left: 25px;
+  top: 490px;
+  border: 20px solid rgb(44, 29, 40);
+  box-shadow: 5px 10px 10px rgba(0,0,0,0.8);
+  transition: all 1s ease-in-out;
+  
+}
+.cinema-box:hover{
+  transform: scale(1.2);
+}
