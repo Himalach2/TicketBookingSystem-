@@ -1,90 +1,18 @@
-/* 
-
-  
-  .container{
-    display: flex;
-
-background-image: url("moviestheater.jpg");
-background-size: cover;
-background-position: center;
-  }
-  h1 {
-    margin: 0;
-  }
-
-  .services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-  }
-
-  .service {
-    background-color: #f1f1f1;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    padding: 20px;
-    width: 30%;
-  }
-
-  .service h2 {
-    margin-top: 0;
-  }
-
-  .service p {
-    margin-bottom: 0;
-  }
-
-.gallery{
-justify-content: space-between;
-        margin: 5px;
-        border:1px solid #ccc;
-      
-    height: 200px;
-      }
-.gallery img{
-            width:100%;
-            height:auto;
-          }
-.desc{ 
-     padding: 15px;
-   }*/ 
-   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-
-   .container{
-    background: url("./images/moviestheater.jpg" ), no-repeat center center/cover ;
-    display: flex;
-   }
-   .gallery{
-    /* justify-content: space-between; */
-    height: 250px;
-    width: 275px;
-    margin: 50px;
-    transition: 0.3s;
-   }
-   .gallery:hover{
-   /* border:2px solid white; */
-    cursor: pointer;
-    height: 280px;
-    width: 290px;
-   }
-  
-
-   .desc{
-    color: white;
-    text-align: center;
-
-   }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  color: #333;
+}
+.movie {
+  margin-bottom: 20px;
+}
+.movie h2 {
+  margin-top: 0;
+}
+.movie p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

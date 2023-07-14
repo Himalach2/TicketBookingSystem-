@@ -3,6 +3,12 @@ body {
     background-color: #f2f2f2;
     padding: 20px;
   }
+  .main-body{
+    width: 100%;
+    background-color: #8de63f;
+    background-size: cover;
+    height: 100%;
+  }
   
   h2 {
     text-align: center;

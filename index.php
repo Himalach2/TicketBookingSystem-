@@ -14,6 +14,7 @@
           <li><a href="./home.php">Home</a></li>
           <li><a href="./movies.php">Movie Listings</a></li>
           <li><a href="./add_movie.php">Add Movie</a></li>
+          <button class="btnadd"><li><a href="./login.php">Login</a></li></button>
         </ul>
       </nav>
     </div>

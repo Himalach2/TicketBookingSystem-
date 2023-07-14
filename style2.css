@@ -36,6 +36,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  margin-left: 8px;
 }
 
 main {
@@ -98,3 +99,21 @@ footer p {
 .cinema-box:hover{
   transform: scale(1.2);
 }
+
+.btnadd{
+  position: relative;
+  left: 750px;
+  top: -15px;
+  padding: 10px;
+  background-color: rgb(215, 21, 40);
+  color: white;
+  border-radius: 12px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btnadd:hover{
+  background-color: rgb(67, 136, 50);
+  padding: 15px;
+  font-weight: bolder;
+  }
