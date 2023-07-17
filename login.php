@@ -13,23 +13,35 @@ if (isset($_POST['submit'])) {
     $errors['password'] = "Password Required";
   }
    if(empty($errors)){
-    $select = "Select * from `user` where email = '$email'";
-    $res = mysqli_query($conn,$select);
-    $row = mysqli_fetch_assoc($res);
-    $id = $row['id'];
-    $prev_email = $row['email'];
-    $prev_password = $row['password'];
-    if($email==$prev_email && password_verify($password,$prev_password)){
-        session_start();
-        $_SESSION['user_id'] = $id;
-       echo"login Success and session of user id '$id' is stored in the browser";
-       header('location:index.html');
+    //user tries to log in
+    $selectUser = "Select * from `user` where email = '$email'";
+    $resUser = mysqli_query($conn,$select);
+    $rowUser = mysqli_fetch_assoc($resUser);
+    $userId = $rowUser['id'];
+    $userrole = $rowUser['role'];
+    //admin tries to login
+    $selectAdmin = "SELECT * FROM `admin` where email = '$email'";
+    $resAdmin = mysqli_query($conn,$select);
+    $rowAdmin = mysqli_fetch_assoc($resAdmin);
+    $adminId = $rowAdmin['id'];
+    $adminrole = $rowAdmin['role'];
 
-      
-      }
-      else{
-        $errors['email'] = "Invalid username or password";
-      }
+    if($resUser && mysqli_num_rows($resUser) && password_verify($password,$rowUser['password'])){
+      session_start();
+      $_SESSION['userId']  = $userId;
+      $_SESSION['role'] = $userrole;
+      header('location:movies.php');
+    }
+    else if($resAdmin && mysqli_num_rows($resAdmin) &&password_verify($password,$rowAdmin['password'])){
+      session_start();
+      $_SESSION['adminId'] = $adminId;
+      $_SESSION['role'] = $adminrole;
+      header('location:admin.php');
+    }
+    else{
+      echo "Wring username or password";
+    }
+    
     
   }
 }

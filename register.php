@@ -41,11 +41,19 @@ if (isset($_POST['submit'])) {
     $errors['gender'] = "Gender is required.";
   }
   if (empty($errors)) {
-
-    $sql = "INSERT INTO user (name, email, password, mobile, gender)
-            VALUES ('$name', '$email', '$hashedPassword', '$mobile_no', '$gender')";
-      $res = mysqli_query($conn,$sql);
+    if($name =="Himal Acharya" && $email == "himal11@gmail.com" && $password == "himal@123"){
+      $sqladmin  = "INSERT INTO `admin`(`name`,`email`,`password`,`mobile`,`gender`,`role`) values('$name','$email','$password','$mobile_no','$gender','admin')";
+      $resadmin = mysqli_query($conn,$sqladmin);
+      if($resadmin){
+        header('location:login.php');
+      }
+    }
+    else{
+    $sqluser = "INSERT INTO `user` (name, email, password, mobile, gender,role)
+            VALUES ('$name', '$email', '$hashedPassword', '$mobile_no', '$gender','user')";
+      $resuser = mysqli_query($conn,$sql);
       header('location:login.php');
+    }
   }
 }
 ?>
