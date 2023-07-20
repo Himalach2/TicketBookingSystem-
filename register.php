@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
         header('location:login.php');
       }
     }
-    else{
+    else{ 
     $sqluser = "INSERT INTO `user` (name, email, password, mobile, gender,role)
             VALUES ('$name', '$email', '$hashedPassword', '$mobile_no', '$gender','user')";
       $resuser = mysqli_query($conn,$sql);

@@ -83,6 +83,38 @@ footer p {
 .main-body img{
   width: 100%;
 }
+.ns{
+color: white;
+  width: 20%;
+  text-align: center;
+  position: absolute;
+  top: 347px;
+  left: 350px;
+}
+.ns1{
+  color: white;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 347px;
+    left: 600px;
+  }
+  .ns2{
+    color: white;
+      width: 20%;
+      text-align: center;
+      position: absolute;
+      top: 667px;
+      left: 350px;
+    }
+    .ns3{
+      color: white;
+        width: 20%;
+        text-align: center;
+        position: absolute;
+        top: 667px;
+        left: 600PX;
+      }
 .cinema-box{
   width: 200px;
   height: 260px;
@@ -95,6 +127,54 @@ footer p {
   box-shadow: 5px 10px 10px rgba(0,0,0,0.8);
   transition: all 1s ease-in-out;
   
+}
+.cinema-box2{
+  width: 200px;
+  height: 260px;
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+  left: 405px;
+  top: 362px;
+  border: 20px solid rgb(44, 29, 40);
+  box-shadow: 5px 10px 10px rgba(0,0,0,0.8);
+  transition: all 1s ease-in-out;
+}
+.cinema-box3{
+  width: 200px;
+  height: 260px;
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+  left: 660px;
+  top: 362px;
+  border: 20px solid rgb(44, 29, 40);
+  box-shadow: 5px 10px 10px rgba(0,0,0,0.8);
+  transition: all 1s ease-in-out;
+}
+.cinema-box4{
+  width: 200px;
+  height: 260px;
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+  left: 405px;
+  top: 682px;
+  border: 20px solid rgb(44, 29, 40);
+  box-shadow: 5px 10px 10px rgba(0,0,0,0.8);
+  transition: all 1s ease-in-out;
+}
+.cinema-box5{
+  width: 200px;
+  height: 260px;
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+  left: 660px;
+  top: 682px;
+  border: 20px solid rgb(44, 29, 40);
+  box-shadow: 5px 10px 10px rgba(0,0,0,0.8);
+  transition: all 1s ease-in-out;
 }
 .cinema-box:hover{
   transform: scale(1.2);

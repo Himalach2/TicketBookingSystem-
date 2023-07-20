@@ -14,14 +14,14 @@ if (isset($_POST['submit'])) {
   }
    if(empty($errors)){
     //user tries to log in
-    $selectUser = "Select * from `user` where email = '$email'";
-    $resUser = mysqli_query($conn,$select);
+    $selectUser = "Select * from `user` where `email` = '$email'";
+    $resUser = mysqli_query($conn,$selectUser);
     $rowUser = mysqli_fetch_assoc($resUser);
     $userId = $rowUser['id'];
     $userrole = $rowUser['role'];
     //admin tries to login
-    $selectAdmin = "SELECT * FROM `admin` where email = '$email'";
-    $resAdmin = mysqli_query($conn,$select);
+    $selectAdmin = "SELECT * FROM `admin` where `email` = '$email'";
+    $resAdmin = mysqli_query($conn,$selectAdmin);
     $rowAdmin = mysqli_fetch_assoc($resAdmin);
     $adminId = $rowAdmin['id'];
     $adminrole = $rowAdmin['role'];
